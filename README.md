@@ -17,7 +17,7 @@ Grace days used for this assignment: 0
 Grace days remaining: 5/5
 
 ## KNOWN BUGS AND INCOMPLETE PARTS:
- Don't know if the graph is set up the way the professor wants
+ None
 
 ## REFERENCES:
  https://docs.python.org/3/library/math.html
