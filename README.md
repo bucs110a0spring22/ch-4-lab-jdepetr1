@@ -8,18 +8,20 @@
 _Replace anything surrounded by the `< >` symbols._
 
 ## SUMMARY:
- < Provide a short description of your program's functionality. No more than a couple sentences. >
+ Draws a sine curve the wrong way.
+ Then sets up screen to correctly fit the newly drawn sine, cosine, and tangent curves.
 
 ## GRACE DAYS
-Grace days used for this assignment: < # >
+Grace days used for this assignment: 0
 
-Grace days remaining: < # >/5
+Grace days remaining: 5/5
 
 ## KNOWN BUGS AND INCOMPLETE PARTS:
- < What parts of the project you were not able to complete >
+ Don't know if the graph is set up the way the professor wants
 
 ## REFERENCES:
- < List any outside resources used >
+ https://docs.python.org/3/library/math.html
+ https://docs.python.org/3/library/turtle.html
 
 ## MISCELLANEOUS COMMENTS:
- < Anything you would like the grader to know >
+ None

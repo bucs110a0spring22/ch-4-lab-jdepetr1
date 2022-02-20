@@ -1,5 +1,6 @@
 import turtle
-
+import math
+PI = math.pi
 ########### Your Code here ##############
 # You should only have functions here
 # If you have anything outside of a function, 
@@ -7,7 +8,48 @@ import turtle
 # and should review how they work or ask for help
 
 
+def setupWindow(screen_object):
+  screen_object.setworldcoordinates(-2*PI, -1.1, 2*PI, 1.1)
+  screen_object.bgcolor("white")
 
+def setupAxis(turtle_object):
+  turtle_object.up()
+  turtle_object.goto(0,0)
+  turtle_object.color("Black")
+  turtle_object.down()
+
+  turtle_object.goto(8,0)
+  turtle_object.goto(-8,0)
+  turtle_object.goto(0,0)
+  turtle_object.goto(0,-2)
+  turtle_object.goto(0,2)
+
+def drawSineCurve(turtle_object):
+  turtle_object.up()
+  turtle_object.goto(-2*PI,0)
+  turtle_object.color("red")
+  turtle_object.down()
+
+  for degree in range(-360,361):
+    turtle_object.goto(math.radians(degree), math.sin(math.radians(degree)))
+
+def drawCosineCurve(turtle_object):
+  turtle_object.up()
+  turtle_object.goto(-2*PI,0)
+  turtle_object.color("blue")
+  turtle_object.down()
+
+  for degree in range(-360,361):
+    turtle_object.goto(math.radians(degree), math.cos(math.radians(degree)))
+
+def drawTangentCurve(turtle_object):
+  turtle_object.up()
+  turtle_object.goto(-2*PI,0)
+  turtle_object.color("green")
+  turtle_object.down()
+
+  for degree in range(-360,361):
+    turtle_object.goto(math.radians(degree), math.tan(math.radians(degree)))
 
 
 
@@ -21,7 +63,7 @@ def main():
     dart = turtle.Turtle()
     dart.speed(0)
     drawSineCurve(dart)
-
+    
     #Part B
     setupWindow(wn)
     setupAxis(dart)
@@ -30,4 +72,5 @@ def main():
     drawCosineCurve(dart)
     drawTangentCurve(dart)
     wn.exitonclick()
+    
 main()
