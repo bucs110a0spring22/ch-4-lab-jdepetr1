@@ -8,7 +8,7 @@
 _Replace anything surrounded by the `< >` symbols._
 
 ## SUMMARY:
- Draws a sine curve the wrong way.
+ Draws a sine curve the wrong way at first
  Then sets up screen to correctly fit the newly drawn sine, cosine, and tangent curves.
 
 ## GRACE DAYS

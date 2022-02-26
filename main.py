@@ -8,10 +8,22 @@ import math
 
 
 def setupWindow(screen_object):
-  screen_object.setworldcoordinates(-360, -1.1, 360, 1.1)
+  '''
+  Sets up the region the turtle screen is to focus on
+  screen_object: (Screen) screen object
+
+  return: None
+  '''
+  screen_object.setworldcoordinates(-360, -1, 360, 1)
   screen_object.bgcolor("white")
 
 def setupAxis(turtle_object):
+  '''
+  Draws x and y axes of graph on turtle screen
+  turtle_object: (Turtle) turtle object
+
+  return: None
+  '''
   turtle_object.up()
   turtle_object.goto(0,0)
   turtle_object.color("Black")
@@ -24,6 +36,12 @@ def setupAxis(turtle_object):
   turtle_object.goto(0,2)
 
 def drawSineCurve(turtle_object):
+  '''
+  Draws a sine curve on turtle screen from [-360, 360]
+  turtle_object: (Turtle) turtle object
+
+  return: None
+  '''
   turtle_object.up()
   turtle_object.goto(-360,0)
   turtle_object.color("red")
@@ -33,6 +51,12 @@ def drawSineCurve(turtle_object):
     turtle_object.goto(degree, math.sin(math.radians(degree)))
 
 def drawCosineCurve(turtle_object):
+  '''
+  Draws a cosine curve on turtle screen from [-360, 360]
+  turtle_object: (Turtle) turtle object
+
+  return: None
+  '''
   turtle_object.up()
   turtle_object.goto(-360,1)
   turtle_object.color("blue")
@@ -42,6 +66,12 @@ def drawCosineCurve(turtle_object):
     turtle_object.goto(degree, math.cos(math.radians(degree)))
 
 def drawTangentCurve(turtle_object):
+  '''
+  Draws a tangent curve on turtle screen from [-360, 360]
+  turtle_object: (Turtle) turtle object
+
+  return: None
+  '''
   turtle_object.up()
   turtle_object.goto(-360,0)
   turtle_object.color("green")
